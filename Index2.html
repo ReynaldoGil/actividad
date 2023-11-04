@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla Avanzada</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h2>Tabla Avanzada</h2>
+
+    <table>
+        <tr>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Edad</th>
+        </tr>
+        <tr>
+            <td>Juan</td>
+            <td>Pérez</td>
+            <td>30</td>
+        </tr>
+        <tr>
+            <td>María</td>
+            <td>García</td>
+            <td>28</td>
+        </tr>
+    </table>
+
+    <h2>Formulario</h2>
+
+    <form action="/submit_form" method="post">
+        <label for="fname">Nombre:</label><br>
+        <input type="text" id="fname" name="fname"><br>
+
+        <label for="lname">Apellido:</label><br>
+        <input type="text" id="lname" name="lname"><br>
+
+        <label for="email">Correo electrónico:</label><br>
+        <input type="email" id="email" name="email"><br>
+
+        <label for="gender">Género:</label><br>
+        <select id="gender" name="gender">
+            <option value="male">Masculino</option>
+            <option value="female">Femenino</option>
+            <option value="other">Otro</option>
+        </select><br>
+
+        <h3>Checkin (al menos 10 preguntas):</h3>
+
+        <input type="checkbox" id="q1" name="q1">
+        <label for="q1"> ¿Qué tal estás?</label><br>
+
+        <input type="checkbox" id="q2" name="q2">
+        <label for="q2"> ¿Cómo estás manejando el tiempo?</label><br>
+
+        <input type="checkbox" id="q3" name="q3">
+        <label for="q3"> ¿ya comiste?</label><br>
+
+        <input type="checkbox" id="q4" name="q4">
+        <label for="q4"> ¿es siempre tan aburrido?</label><br>
+
+        <input type="checkbox" id="q5" name="q5">
+        <label for="q5"> ¿Qué tal es tu abuela?</label><br>
+
+        <input type="checkbox" id="q6" name="q6">
+        <label for="q6"> ¿Qué tal está el perro de la vecina?</label><br>
+
+        <input type="checkbox" id="q7" name="q7">
+        <label for="q7"> ¿Qué es el pensamiento logico?</label><br>
+
+        <input type="checkbox" id="q8" name="q8">
+        <label for="q8"> ¿Qué tal está los aviones?</label><br>
+
+        <input type="checkbox" id="q9" name="q9">
+        <label for="q9"> ¿cual es el animal mas rapído?</label><br>
+
+        <input type="checkbox" id="q10" name="q10">
+        <label for="q10"> ¿Qué tal estuvo el dia de ayer?</label><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
